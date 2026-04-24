@@ -1,0 +1,17 @@
+[
+  {
+    "id": "css_import_rule",
+    "title": "CSS import rule",
+    "content": "@import rules must appear before all other CSS rules except @charset and @layer."
+  },
+  {
+    "id": "nextjs_app_router",
+    "title": "Next.js App Router",
+    "content": "Next.js App Router uses the app directory, layout.tsx, page.tsx, server components and client components."
+  },
+  {
+    "id": "fastapi_backend",
+    "title": "FastAPI backend",
+    "content": "FastAPI is a Python web framework commonly used for building APIs with async support."
+  }
+]

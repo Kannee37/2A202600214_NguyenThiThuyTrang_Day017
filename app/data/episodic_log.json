@@ -1,0 +1,68 @@
+﻿[
+  {
+    "user_id": "user_001",
+    "event": "Tôi bị lỗi CSS @import trong Next.js",
+    "solution": "Saved as user experience.",
+    "timestamp": "2026-04-24T11:44:14.388617"
+  },
+  {
+    "user_id": "user_001",
+    "event": "Tôi đã từng gặp lỗi này chưa?",
+    "solution": "Saved as user experience.",
+    "timestamp": "2026-04-24T11:44:14.388617"
+  },
+  {
+    "user_id": "user_001",
+    "event": "Tôi bị lỗi CSS @import trong Next.js",
+    "solution": "Saved as user experience.",
+    "timestamp": "2026-04-24T11:58:20.268695"
+  },
+  {
+    "user_id": "user_001",
+    "event": "Tôi bị lỗi CSS @import trong Next.js",
+    "solution": "Saved as user experience.",
+    "timestamp": "2026-04-24T12:08:29.810969"
+  },
+  {
+    "user_id": "user_001",
+    "event": "Tôi đã từng gặp lỗi này chưa?",
+    "solution": "Saved as user experience.",
+    "timestamp": "2026-04-24T12:08:30.697039"
+  },
+  {
+    "user_id": "user_001",
+    "event": "Tôi bị lỗi CSS @import trong Next.js",
+    "solution": "Saved as user experience.",
+    "timestamp": "2026-04-24T12:09:42.928377"
+  },
+  {
+    "user_id": "user_001",
+    "event": "Tôi đã từng gặp lỗi này chưa?",
+    "solution": "Saved as user experience.",
+    "timestamp": "2026-04-24T12:09:52.264563"
+  },
+  {
+    "user_id": "user_conv_02",
+    "event": "Tôi bị lỗi CSS @import trong Next.js.",
+    "solution": "Saved as user experience.",
+    "timestamp": "2026-04-24T12:12:57.332007"
+  },
+  {
+    "user_id": "user_conv_02",
+    "event": "Lỗi này trước đây tôi từng gặp chưa?",
+    "solution": "Saved as user experience.",
+    "timestamp": "2026-04-24T12:13:00.897069"
+  },
+  {
+    "user_id": "user_conv_02",
+    "event": "Tôi bị lỗi CSS @import trong Next.js.",
+    "solution": "Saved as user experience.",
+    "timestamp": "2026-04-24T12:16:45.278075"
+  },
+  {
+    "user_id": "user_conv_02",
+    "event": "Lỗi này trước đây tôi từng gặp chưa?",
+    "solution": "Saved as user experience.",
+    "timestamp": "2026-04-24T12:16:50.964908"
+  }
+]

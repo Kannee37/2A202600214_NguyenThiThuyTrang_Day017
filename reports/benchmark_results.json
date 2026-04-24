@@ -1,0 +1,74 @@
+﻿[
+  {
+    "conversation_id": "conv_01",
+    "turn_index": 1,
+    "query": "Tôi thích dùng FastAPI cho backend.",
+    "memory_used": "short_term+long_term_profile",
+    "response_length": 7,
+    "response": "FastAPI"
+  },
+  {
+    "conversation_id": "conv_01",
+    "turn_index": 2,
+    "query": "Lần sau tạo backend thì bạn nhớ dùng gì?",
+    "memory_used": "short_term+long_term_profile",
+    "response_length": 7,
+    "response": "FastAPI"
+  },
+  {
+    "conversation_id": "conv_01",
+    "turn_index": 3,
+    "query": "FastAPI là gì?",
+    "memory_used": "short_term+long_term_profile",
+    "response_length": 67,
+    "response": "Tôi không có thông tin định nghĩa về FastAPI trong bộ nhớ của mình."
+  },
+  {
+    "conversation_id": "conv_02",
+    "turn_index": 1,
+    "query": "Tôi bị lỗi CSS @import trong Next.js.",
+    "memory_used": "short_term+episodic",
+    "response_length": 2070,
+    "response": "Dựa trên ký ức của tôi, bạn đã đề cập đến lỗi \"Tôi bị lỗi CSS @import trong Next.js.\" trước đây.\n\nĐể giúp bạn khắc phục lỗi này, bạn có thể kiểm tra một số điều sau:\n\n1.  **Đường dẫn tương đối/tuyệt đối:** Đảm bảo đường dẫn trong `@import` là chính xác.\n    *   **Đường dẫn tương đối:** `import './styles/global.css';`\n    *   **Đường dẫn tuyệt đối (với alias):** Nếu bạn đã cấu hình alias trong `jsconfig.json` hoặc `tsconfig.json`, hãy đảm bảo sử dụng đúng alias, ví dụ: `import '@/styles/global.css';`\n2.  **Cú pháp:** Đảm bảo cú pháp `@import` là chính xác. Trong Next.js, đặc biệt là với CSS Modules, bạn thường không dùng `@import` trong các file module. Thay vào đó, bạn import trực tiếp file CSS:\n    ```javascript\n    // Trong một component React\n    import styles from './MyComponent.module.css';\n    import 'your-global-styles.css'; // Đối với global styles\n    ```\n3.  **Vị trí của Global Styles:** Nếu bạn đang import global styles, chúng chỉ nên được import trong file `_app.js` (Next.js Pages Router) hoặc `layout.tsx`/`layout.js` (Next.js App Router).\n    *   **Pages Router (`_app.js`):**\n        ```javascript\n        import '../styles/globals.css'; // Import global styles\n        function MyApp({ Component, pageProps }) {\n          return <Component {...pageProps} />;\n        }\n        export default MyApp;\n        ```\n    *   **App Router (`layout.tsx` hoặc `layout.js`):**\n        ```javascript\n        import '../styles/globals.css'; // Import global styles\n        export default function RootLayout({ children }) {\n          return (\n            <html lang=\"en\">\n              <body>{children}</body>\n            </html>\n          );\n        }\n        ```\n4.  **Sass/SCSS:** Nếu bạn đang dùng Sass/SCSS, hãy đảm bảo bạn đã cài đặt `sass` (`npm install sass` hoặc `yarn add sass`).\n5.  **Cấu hình `next.config.js`:** Đôi khi, các plugin hoặc cấu hình tùy chỉnh có thể gây ra lỗi. Đảm bảo bạn không có cấu hình nào mâu thuẫn.\n\nBạn có thể chia sẻ thêm về cấu trúc thư mục và cách bạn đang sử dụng `@import` để tôi có thể hỗ trợ cụ thể hơn không?"
+  },
+  {
+    "conversation_id": "conv_02",
+    "turn_index": 2,
+    "query": "Lỗi này trước đây tôi từng gặp chưa?",
+    "memory_used": "short_term+episodic",
+    "response_length": 110,
+    "response": "Có vẻ như bạn đã hỏi câu \"Lỗi này trước đây tôi từng gặp chưa?\" vào ngày 24 tháng 4 năm 2026 lúc 12:16:50 UTC."
+  },
+  {
+    "conversation_id": "conv_02",
+    "turn_index": 3,
+    "query": "Rule của @import là gì?",
+    "memory_used": "short_term",
+    "response_length": 1282,
+    "response": "Trong ngữ cảnh của Next.js và React, dựa trên những gì chúng ta đã thảo luận về lỗi `@import` CSS của bạn, các \"rule\" (quy tắc) hoặc nguyên tắc sử dụng `@import` có thể bao gồm:\n\n1.  **Cú pháp:** Đảm bảo cú pháp `@import` là chính xác.\n2.  **Đường dẫn:**\n    *   Sử dụng đường dẫn tương đối hoặc tuyệt đối chính xác đến file CSS bạn muốn import.\n    *   Ví dụ: `import './styles/global.css';` hoặc `import '@/styles/global.css';` (nếu dùng alias).\n3.  **Vị trí của Global Styles:** Nếu bạn đang import các global styles (kiểu dáng áp dụng cho toàn bộ ứng dụng), chúng chỉ nên được import ở một vị trí cụ thể và duy nhất trong ứng dụng Next.js của bạn:\n    *   Với **Pages Router**: Trong file `_app.js`.\n    *   Với **App Router**: Trong file `layout.tsx` hoặc `layout.js` (thường là `RootLayout`).\n4.  **Hạn chế với CSS Modules:** Trong các file CSS Modules (`.module.css`), bạn thường không nên sử dụng `@import` để import các file CSS khác. Thay vào đó, bạn sẽ import trực tiếp file CSS vào component JavaScript/TypeScript của mình: `import styles from './MyComponent.module.css';`.\n5.  **Sass/SCSS:** Nếu bạn muốn sử dụng các tính năng của Sass/SCSS (ví dụ: `@import` trong Sass để gộp nhiều file SCSS), bạn cần cài đặt thư viện `sass` (`npm install sass` hoặc `yarn add sass`)."
+  },
+  {
+    "conversation_id": "conv_03",
+    "turn_index": 1,
+    "query": "Tôi muốn code tách từng file để dễ copy.",
+    "memory_used": "short_term+long_term_profile",
+    "response_length": 1396,
+    "response": "Dựa trên ký ức của tôi, bạn đã thể hiện sở thích về `code_style` là `split_files` (tách các file).\n\nĐiều này hoàn toàn phù hợp với cách phát triển ứng dụng Next.js/React hiện đại, đặc biệt là khi chúng ta đã thảo luận về việc quản lý CSS. Tách từng file giúp:\n\n*   **Dễ quản lý:** Mỗi file tập trung vào một phần chức năng cụ thể (ví dụ: một component, một module CSS, một hàm tiện ích).\n*   **Dễ tái sử dụng:** Bạn có thể dễ dàng copy và sử dụng lại các component, hook, utility functions, hoặc style modules ở các dự án khác hoặc các phần khác của cùng một dự án.\n*   **Dễ debug:** Khi có lỗi, bạn có thể nhanh chóng khoanh vùng vấn đề ở một file cụ thể.\n*   **Dễ đọc:** Cấu trúc dự án rõ ràng, dễ hiểu.\n\nTrong ngữ cảnh của Next.js và CSS, việc tách file được thể hiện qua:\n\n*   **Global Styles:** Một file CSS riêng cho các kiểu dáng toàn cục, chỉ import ở `_app.js` (Pages Router) hoặc `layout.tsx` (App Router).\n*   **CSS Modules:** Các file `.module.css` riêng biệt cho từng component, giúp cô lập kiểu dáng và dễ dàng copy component đó cùng với styles của nó.\n*   **Component Files:** Mỗi component React được định nghĩa trong một file riêng (`.js`, `.jsx`, `.ts`, `.tsx`).\n*   **Utility Files:** Các hàm helper, constants, hooks, v.v., được đặt trong các file riêng.\n\nVì vậy, việc bạn muốn \"code tách từng file để dễ copy\" là một thực hành tốt và phù hợp với phong cách lập trình của bạn!"
+  },
+  {
+    "conversation_id": "conv_03",
+    "turn_index": 2,
+    "query": "Tạo cho tôi cấu trúc project.",
+    "memory_used": "short_term+long_term_profile",
+    "response_length": 34,
+    "response": "Tôi đã ghi nhận thông tin của bạn."
+  },
+  {
+    "conversation_id": "conv_03",
+    "turn_index": 3,
+    "query": "Nhớ preference của tôi là gì?",
+    "memory_used": "short_term+long_term_profile",
+    "response_length": 88,
+    "response": "Dựa trên ký ức của tôi, sở thích của bạn là `code_style`: `split_files` (tách các file)."
+  }
+]

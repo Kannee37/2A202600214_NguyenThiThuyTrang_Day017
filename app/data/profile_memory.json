@@ -1,0 +1,12 @@
+﻿{
+  "user_001": {
+    "backend_preference": "FastAPI",
+    "allergy": "đậu nành"
+  },
+  "user_conv_01": {
+    "backend_preference": "FastAPI"
+  },
+  "user_conv_03": {
+    "code_style": "split_files"
+  }
+}

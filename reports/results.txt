@@ -1,0 +1,56 @@
+==================================================
+SCENARIO: Long-term preference
+==================================================
+
+User: Tôi thích dùng FastAPI
+
+Assistant:
+Đã rõ, bạn thích dùng FastAPI. Điều này đã được ghi nhận trong hồ sơ của bạn.
+
+User: Lần sau tạo backend thì bạn nhớ dùng gì?
+
+Assistant:
+Bạn thích dùng FastAPI.
+
+User: FastAPI là gì?
+
+Assistant:
+Tôi xin lỗi, tôi không có thông tin trong bộ nhớ của mình để giải thích FastAPI là gì. Tôi chỉ biết rằng bạn thích dùng FastAPI.
+
+==================================================
+SCENARIO: Conflict update
+==================================================
+
+User: Tôi dị ứng sữa bò
+
+Assistant:
+Đã rõ, bạn dị ứng sữa bò. Thông tin này đã được ghi nhận trong hồ sơ của bạn.
+
+User: À nhầm, tôi dị ứng đậu nành chứ không phải sữa bò
+
+Assistant:
+Đã rõ, bạn dị ứng đậu nành. Thông tin này đã được cập nhật và xác nhận trong hồ sơ của bạn.
+
+User: Tôi dị ứng gì?
+
+Assistant:
+Bạn dị ứng đậu nành.
+==================================================
+SCENARIO: Episodic memory
+==================================================
+
+User: Tôi bị lỗi CSS @import trong Next.js
+
+Assistant:
+Bạn đã báo cáo lỗi CSS @import trong Next.js này trước đây, và thông tin này đã được ghi nhận.
+
+User: Tôi đã từng gặp lỗi này chưa?
+🔄 Switching API key...
+
+Assistant:
+Dựa trên cuộc trò chuyện gần đây, bạn đã báo cáo lỗi CSS @import trong Next.js này trước đây, và thông tin này đã được ghi nhận.
+
+User: Rule của @import là gì?
+
+Assistant:
+Dựa trên các bộ nhớ được cung cấp, không có thông tin nào giải thích các quy tắc của `@import`.

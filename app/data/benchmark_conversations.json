@@ -1,0 +1,26 @@
+[
+  {
+    "id": "conv_01",
+    "turns": [
+      "Tôi thích dùng FastAPI cho backend.",
+      "Lần sau tạo backend thì bạn nhớ dùng gì?",
+      "FastAPI là gì?"
+    ]
+  },
+  {
+    "id": "conv_02",
+    "turns": [
+      "Tôi bị lỗi CSS @import trong Next.js.",
+      "Lỗi này trước đây tôi từng gặp chưa?",
+      "Rule của @import là gì?"
+    ]
+  },
+  {
+    "id": "conv_03",
+    "turns": [
+      "Tôi muốn code tách từng file để dễ copy.",
+      "Tạo cho tôi cấu trúc project.",
+      "Nhớ preference của tôi là gì?"
+    ]
+  }
+]
